@@ -1,0 +1,55 @@
+{
+  "local_date": "2026-10-22T00:27:22.251782+08:00",
+  "cache_conditions": "New venv; pip cache disabled for install (--no-cache-dir); network available. Prior attempts may have warmed OS/network caches. Not a cold-network benchmark.",
+  "prior_attempts": [
+    "Default source install was interrupted before completion; no complete timing recorded.",
+    "Verbose retry failed because the inherited global pip wheel cache was not writable. The documented recipe now disables that cache; no system permissions were changed."
+  ],
+  "total_seconds": 33.415,
+  "steps": [
+    {
+      "command": [
+        "python.exe",
+        "-m",
+        "venv",
+        "$PROJECT\\.venv-quickstart-measured"
+      ],
+      "exit_code": 0,
+      "seconds": 5.729,
+      "output": ""
+    },
+    {
+      "command": [
+        "python.exe",
+        "-m",
+        "pip",
+        "install",
+        "--no-cache-dir",
+        "--index-url",
+        "https://pypi.org/simple",
+        "--timeout",
+        "15",
+        "--retries",
+        "1",
+        "--disable-pip-version-check",
+        "."
+      ],
+      "exit_code": 0,
+      "seconds": 23.28,
+      "output": "Processing $PROJECT\n  Installing build dependencies: started\n  Installing build dependencies: finished with status 'done'\n  Getting requirements to build wheel: started\n  Getting requirements to build wheel: finished with status 'done'\n  Preparing metadata (pyproject.toml): started\n  Preparing metadata (pyproject.toml): finished with status 'done'\nCollecting numpy<3,>=1.24 (from vla-preflight==0.1.0rc1)\n  Downloading numpy-2.5.4-cp312-cp312-win_amd64.whl.metadata (6.6 kB)\nDownloading numpy-2.5.4-cp312-cp312-win_amd64.whl (12.6 MB)\n   ---------------------------------------- 12.6/12.6 MB 19.2 MB/s eta 0:00:00\nBuilding wheels for collected packages: vla-preflight\n  Building wheel for vla-preflight (pyproject.toml): started\n  Building wheel for vla-preflight (pyproject.toml): finished with status 'done'\n  Created wheel for vla-preflight: filename=vla_preflight-0.1.0rc1-py3-none-any.whl size=22941 sha256=fff5bca25c4159f8762e35ad6648906da2f04f355348e314c647ed177a0d77fe\n  Stored in directory: $USER_HOME\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-63m07fs3\\wheels\\8f\\ed\\56\\7ba7b1071682e8948b053a7d41f99151624bbd4a122812a75e\nSuccessfully built vla-preflight\nInstalling collected packages: numpy, vla-preflight\nSuccessfully installed numpy-2.5.4 vla-preflight-0.1.0rc1\n"
+    },
+    {
+      "command": [
+        "python.exe",
+        "-m",
+        "vla_preflight",
+        "demo",
+        "--out",
+        "quickstart-output"
+      ],
+      "exit_code": 0,
+      "seconds": 4.406,
+      "output": "Demo verified: 10 scenarios; 3.187 s\n$PROJECT\\quickstart-output\\index.html\n"
+    }
+  ]
+}

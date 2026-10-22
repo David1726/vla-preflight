@@ -1,0 +1,14 @@
+{
+  "local_date": "2026-10-22T00:33:19.105751+08:00",
+  "illustration_qa": "All four 1280x820 PNG frames opened in image tool and inspected. No clipped labels or overlap observed. Regeneration from final demo produced identical hashes.",
+  "browser_qa": "NOT EXECUTED: browser tool rejected file:// URL. No workaround attempted. HTML visual/interactive QA remains for owner.",
+  "static_report_checks": "Embedded PNG decoding, local report links, finite SVG points, escaping and placeholder checks pass in test suite.",
+  "files": {
+    "walkthrough-camera_mapping.png": "6c2b246749240770321d009ad99dd67fc7dd1f27532548c3fd8b776d054c06bc",
+    "walkthrough-fixed.png": "b36a1ad793aeb2c696ad6ea6baee7ce96dd069186e90cd2e1b63f3a543d469f5",
+    "walkthrough-healthy.png": "4603064a51bd6f9badf93ce182f22e2d730fa79e80ca877b71796a840317fd91",
+    "walkthrough-missing_reset.png": "007576fcd42de8ecd00489df9641ab304aacc82f1382427181de063d42612e22",
+    "walkthrough.gif": "ff9ce04eea73fe15e2f1665d5b422cfbf714fa99a5a28174cacce8ded65252ed"
+  },
+  "not_browser_screenshots": true
+}

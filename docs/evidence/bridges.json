@@ -1,0 +1,493 @@
+{
+  "python": "3.12.15",
+  "platform": "Windows-11-10.0.22631-SP0",
+  "openpi": {
+    "source_sha": "215abfb217dbac7d5f1273282331b9b1866c0479",
+    "executed": "Original ActionChunkBroker.infer/reset and dm-tree",
+    "trained_model": false,
+    "simulation": false,
+    "multi_session": "unsupported; probe skipped",
+    "results": [
+      {
+        "scenario": "healthy",
+        "status": "PASS",
+        "expected": "PASS",
+        "first": null,
+        "probe": {
+          "schema": "vla-preflight.probe/1",
+          "status": "PASS",
+          "checks": [
+            {
+              "name": "chunk_consumption",
+              "status": "PASS",
+              "actual": [
+                [
+                  100.0
+                ],
+                [
+                  101.0
+                ],
+                [
+                  102.0
+                ],
+                [
+                  110.0
+                ],
+                [
+                  111.0
+                ],
+                [
+                  112.0
+                ],
+                [
+                  120.0
+                ],
+                [
+                  121.0
+                ]
+              ],
+              "expected": [
+                [
+                  100.0
+                ],
+                [
+                  101.0
+                ],
+                [
+                  102.0
+                ],
+                [
+                  110.0
+                ],
+                [
+                  111.0
+                ],
+                [
+                  112.0
+                ],
+                [
+                  120.0
+                ],
+                [
+                  121.0
+                ]
+              ]
+            },
+            {
+              "name": "reset_discards_partial_chunk_and_forwards",
+              "status": "PASS",
+              "actual": [
+                200.0
+              ],
+              "expected": [
+                200.0
+              ]
+            },
+            {
+              "name": "reset_restarts_inner_policy",
+              "status": "PASS",
+              "actual": [
+                200.0
+              ],
+              "expected": [
+                200.0
+              ]
+            },
+            {
+              "name": "session_interleaving",
+              "status": "SKIP",
+              "reason": "Adapter does not declare multi-session support"
+            }
+          ],
+          "model": "deterministic synthetic ChunkPolicy",
+          "simulation": false
+        }
+      },
+      {
+        "scenario": "chunk_index",
+        "status": "FAIL",
+        "expected": "FAIL",
+        "first": {
+          "session": "default",
+          "episode": "A",
+          "step": 0,
+          "stage": "command",
+          "field": "actions",
+          "candidate_field": "actions",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "reference_shape": [
+            1
+          ],
+          "candidate_shape": [
+            1
+          ],
+          "status": "FAIL",
+          "reason": "Values exceed tolerance",
+          "max_abs_error": 1.0,
+          "mismatch_count": 1,
+          "first_index": [
+            0
+          ],
+          "reference_value": 100.0,
+          "candidate_value": 101.0
+        },
+        "probe": {
+          "schema": "vla-preflight.probe/1",
+          "status": "FAIL",
+          "checks": [
+            {
+              "name": "chunk_consumption",
+              "status": "FAIL",
+              "actual": [
+                [
+                  101.0
+                ],
+                [
+                  110.0
+                ],
+                [
+                  112.0
+                ],
+                [
+                  121.0
+                ],
+                [
+                  130.0
+                ],
+                [
+                  132.0
+                ],
+                [
+                  141.0
+                ],
+                [
+                  150.0
+                ]
+              ],
+              "expected": [
+                [
+                  100.0
+                ],
+                [
+                  101.0
+                ],
+                [
+                  102.0
+                ],
+                [
+                  110.0
+                ],
+                [
+                  111.0
+                ],
+                [
+                  112.0
+                ],
+                [
+                  120.0
+                ],
+                [
+                  121.0
+                ]
+              ]
+            },
+            {
+              "name": "reset_discards_partial_chunk_and_forwards",
+              "status": "FAIL",
+              "actual": [
+                201.0
+              ],
+              "expected": [
+                200.0
+              ]
+            },
+            {
+              "name": "reset_restarts_inner_policy",
+              "status": "FAIL",
+              "actual": [
+                201.0
+              ],
+              "expected": [
+                200.0
+              ]
+            },
+            {
+              "name": "session_interleaving",
+              "status": "SKIP",
+              "reason": "Adapter does not declare multi-session support"
+            }
+          ],
+          "model": "deterministic synthetic ChunkPolicy",
+          "simulation": false
+        }
+      },
+      {
+        "scenario": "missing_reset",
+        "status": "FAIL",
+        "expected": "FAIL",
+        "first": {
+          "session": "default",
+          "episode": "B",
+          "step": 0,
+          "stage": "command",
+          "field": "actions",
+          "candidate_field": "actions",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "reference_shape": [
+            1
+          ],
+          "candidate_shape": [
+            1
+          ],
+          "status": "FAIL",
+          "reason": "Values exceed tolerance",
+          "max_abs_error": 88.0,
+          "mismatch_count": 1,
+          "first_index": [
+            0
+          ],
+          "reference_value": 200.0,
+          "candidate_value": 112.0
+        },
+        "probe": {
+          "schema": "vla-preflight.probe/1",
+          "status": "FAIL",
+          "checks": [
+            {
+              "name": "chunk_consumption",
+              "status": "PASS",
+              "actual": [
+                [
+                  100.0
+                ],
+                [
+                  101.0
+                ],
+                [
+                  102.0
+                ],
+                [
+                  110.0
+                ],
+                [
+                  111.0
+                ],
+                [
+                  112.0
+                ],
+                [
+                  120.0
+                ],
+                [
+                  121.0
+                ]
+              ],
+              "expected": [
+                [
+                  100.0
+                ],
+                [
+                  101.0
+                ],
+                [
+                  102.0
+                ],
+                [
+                  110.0
+                ],
+                [
+                  111.0
+                ],
+                [
+                  112.0
+                ],
+                [
+                  120.0
+                ],
+                [
+                  121.0
+                ]
+              ]
+            },
+            {
+              "name": "reset_discards_partial_chunk_and_forwards",
+              "status": "FAIL",
+              "actual": [
+                122.0
+              ],
+              "expected": [
+                200.0
+              ]
+            },
+            {
+              "name": "reset_restarts_inner_policy",
+              "status": "FAIL",
+              "actual": [
+                230.0
+              ],
+              "expected": [
+                200.0
+              ]
+            },
+            {
+              "name": "session_interleaving",
+              "status": "SKIP",
+              "reason": "Adapter does not declare multi-session support"
+            }
+          ],
+          "model": "deterministic synthetic ChunkPolicy",
+          "simulation": false
+        }
+      },
+      {
+        "scenario": "fixed",
+        "status": "PASS",
+        "expected": "PASS",
+        "first": null,
+        "probe": {
+          "schema": "vla-preflight.probe/1",
+          "status": "PASS",
+          "checks": [
+            {
+              "name": "chunk_consumption",
+              "status": "PASS",
+              "actual": [
+                [
+                  100.0
+                ],
+                [
+                  101.0
+                ],
+                [
+                  102.0
+                ],
+                [
+                  110.0
+                ],
+                [
+                  111.0
+                ],
+                [
+                  112.0
+                ],
+                [
+                  120.0
+                ],
+                [
+                  121.0
+                ]
+              ],
+              "expected": [
+                [
+                  100.0
+                ],
+                [
+                  101.0
+                ],
+                [
+                  102.0
+                ],
+                [
+                  110.0
+                ],
+                [
+                  111.0
+                ],
+                [
+                  112.0
+                ],
+                [
+                  120.0
+                ],
+                [
+                  121.0
+                ]
+              ]
+            },
+            {
+              "name": "reset_discards_partial_chunk_and_forwards",
+              "status": "PASS",
+              "actual": [
+                200.0
+              ],
+              "expected": [
+                200.0
+              ]
+            },
+            {
+              "name": "reset_restarts_inner_policy",
+              "status": "PASS",
+              "actual": [
+                200.0
+              ],
+              "expected": [
+                200.0
+              ]
+            },
+            {
+              "name": "session_interleaving",
+              "status": "SKIP",
+              "reason": "Adapter does not declare multi-session support"
+            }
+          ],
+          "model": "deterministic synthetic ChunkPolicy",
+          "simulation": false
+        }
+      }
+    ]
+  },
+  "lerobot": {
+    "source_sha": "53feaef37b67e8f4c23b6953e880ff535e39d6fe",
+    "executed": "Original MEAN_STD normalizer/unnormalizer, converters, base pipeline and types",
+    "loading": "package initializer isolation; no numeric code replaced",
+    "torch": "2.7.1+cpu",
+    "trained_model": false,
+    "simulation": false,
+    "results": [
+      {
+        "scenario": "healthy",
+        "status": "PASS",
+        "expected": "PASS",
+        "first": null
+      },
+      {
+        "scenario": "double_inverse",
+        "status": "FAIL",
+        "expected": "FAIL",
+        "first": {
+          "session": "default",
+          "episode": "fixture",
+          "step": 0,
+          "stage": "command",
+          "field": "actions",
+          "candidate_field": "actions",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "reference_shape": [
+            2
+          ],
+          "candidate_shape": [
+            2
+          ],
+          "status": "FAIL",
+          "reason": "Values exceed tolerance",
+          "max_abs_error": 0.30000000447034836,
+          "mismatch_count": 2,
+          "first_index": [
+            0
+          ],
+          "reference_value": -0.4000000059604645,
+          "candidate_value": -0.10000000149011612
+        }
+      },
+      {
+        "scenario": "fixed",
+        "status": "PASS",
+        "expected": "PASS",
+        "first": null
+      }
+    ]
+  }
+}

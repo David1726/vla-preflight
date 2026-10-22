@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vla-preflight"
+version = "0.1.0rc1"
+description = "Replayable policy I/O and lifecycle checks before robot evaluation"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = ["numpy>=1.24,<3"]
+classifiers = ["Development Status :: 3 - Alpha", "Programming Language :: Python :: 3"]
+
+[project.urls]
+Repository = "https://github.com/David1726/vla-preflight"
+Issues = "https://github.com/David1726/vla-preflight/issues"
+
+[project.optional-dependencies]
+dev = ["pytest==8.3.5", "build==1.2.2.post1", "twine==6.1.0", "ruff==0.11.13"]
+
+[project.scripts]
+vla-preflight = "vla_preflight.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

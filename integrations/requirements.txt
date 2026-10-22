@@ -1,0 +1,5 @@
+# Install torch from its official CPU index first; see docs/integrations.md.
+dm-tree==0.1.9
+typing-extensions==4.16.0
+huggingface-hub==1.6.0
+safetensors==0.6.2

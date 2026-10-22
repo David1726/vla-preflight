@@ -1,0 +1,11 @@
+include LICENSE THIRD_PARTY.md README.zh-CN.md
+recursive-include docs *.md *.json *.png *.gif *.html
+recursive-include examples *.py
+recursive-include scripts *.py
+recursive-include tests *.py
+recursive-include integrations *.py *.json *.txt LICENSE OPENPI_LICENSE
+recursive-include .github *.yml
+exclude docs/evidence/release-check.json
+exclude docs/evidence/*.log
+global-exclude *.pyc
+global-exclude __pycache__

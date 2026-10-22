@@ -1,0 +1,59 @@
+{
+  "files": {
+    "LICENSE": {
+      "sha256": "9e108af26a7ae92a6d2cb0273856a4a0a84da8819c2cffee8b2657cc4f905718",
+      "source": "https://github.com/huggingface/lerobot/blob/53feaef37b67e8f4c23b6953e880ff535e39d6fe/LICENSE",
+      "license": "Apache-2.0"
+    },
+    "openpi_client/action_chunk_broker.py": {
+      "sha256": "019b9d69cb26cc681331a2f95dbe60a2cc7b02d6d309c5d15b6457ab39798234",
+      "source": "https://github.com/Physical-Intelligence/openpi/blob/215abfb217dbac7d5f1273282331b9b1866c0479/packages/openpi-client/src/openpi_client/action_chunk_broker.py",
+      "license": "Apache-2.0"
+    },
+    "openpi_client/base_policy.py": {
+      "sha256": "88e98e0f06293f3c4767db675061664c4bba12f87242ba1e64377d1b8de8069e",
+      "source": "https://github.com/Physical-Intelligence/openpi/blob/215abfb217dbac7d5f1273282331b9b1866c0479/packages/openpi-client/src/openpi_client/base_policy.py",
+      "license": "Apache-2.0"
+    },
+    "OPENPI_LICENSE": {
+      "sha256": "43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
+      "source": "https://github.com/Physical-Intelligence/openpi/blob/215abfb217dbac7d5f1273282331b9b1866c0479/LICENSE",
+      "license": "Apache-2.0"
+    },
+    "src/lerobot/configs/types.py": {
+      "sha256": "1354e7d24b19d5d4970064104f76d8c85570c204bf2d09e2b4402f93a994ad99",
+      "source": "https://github.com/huggingface/lerobot/blob/53feaef37b67e8f4c23b6953e880ff535e39d6fe/src/lerobot/configs/types.py",
+      "license": "Apache-2.0"
+    },
+    "src/lerobot/lerobot_types.py": {
+      "sha256": "2acd899d012aac32437b14892224e137c954adff1a4d4801ccbf54b1f2fc5e7b",
+      "source": "https://github.com/huggingface/lerobot/blob/53feaef37b67e8f4c23b6953e880ff535e39d6fe/src/lerobot/lerobot_types.py",
+      "license": "Apache-2.0"
+    },
+    "src/lerobot/processor/converters.py": {
+      "sha256": "51099b6ed8330f1b2fd88cf8afd3a09a4466e6a262d55e3151dbc38185ca75f4",
+      "source": "https://github.com/huggingface/lerobot/blob/53feaef37b67e8f4c23b6953e880ff535e39d6fe/src/lerobot/processor/converters.py",
+      "license": "Apache-2.0"
+    },
+    "src/lerobot/processor/normalize_processor.py": {
+      "sha256": "0b4beb2b9743d47256be53e67330d05c8552f07258a06eeeade1c9bbf217558c",
+      "source": "https://github.com/huggingface/lerobot/blob/53feaef37b67e8f4c23b6953e880ff535e39d6fe/src/lerobot/processor/normalize_processor.py",
+      "license": "Apache-2.0"
+    },
+    "src/lerobot/processor/pipeline.py": {
+      "sha256": "43fa3f47ebe134e69bff2834c80edec00ec2c4396dc71a4caeef4a7921277a89",
+      "source": "https://github.com/huggingface/lerobot/blob/53feaef37b67e8f4c23b6953e880ff535e39d6fe/src/lerobot/processor/pipeline.py",
+      "license": "Apache-2.0"
+    },
+    "src/lerobot/utils/constants.py": {
+      "sha256": "f53937a19250cadb842ee3dc7196e65cee3a79b3dcd8791a061f1664d44b0722",
+      "source": "https://github.com/huggingface/lerobot/blob/53feaef37b67e8f4c23b6953e880ff535e39d6fe/src/lerobot/utils/constants.py",
+      "license": "Apache-2.0"
+    },
+    "src/lerobot/utils/hub.py": {
+      "sha256": "1c9dc26020ce79a5584ef5345ca1fd99f1049334708ab3cf9545e9107c2e9474",
+      "source": "https://github.com/huggingface/lerobot/blob/53feaef37b67e8f4c23b6953e880ff535e39d6fe/src/lerobot/utils/hub.py",
+      "license": "Apache-2.0"
+    }
+  }
+}

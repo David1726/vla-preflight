@@ -1,0 +1,117 @@
+{
+  "local_date": "2026-10-22T00:28:22.776312+08:00",
+  "total_seconds": 29.747,
+  "steps": [
+    {
+      "command": [
+        "python.exe",
+        "-m",
+        "venv",
+        "$PROJECT\\.venv-wheel-smoke"
+      ],
+      "exit_code": 0,
+      "seconds": 5.638,
+      "output": ""
+    },
+    {
+      "command": [
+        "python.exe",
+        "-m",
+        "pip",
+        "install",
+        "--no-cache-dir",
+        "--index-url",
+        "https://pypi.org/simple",
+        "--timeout",
+        "15",
+        "--retries",
+        "1",
+        "--disable-pip-version-check",
+        "$PROJECT\\dist\\vla_preflight-0.1.0rc1-py3-none-any.whl"
+      ],
+      "exit_code": 0,
+      "seconds": 19.154,
+      "output": "Processing $PROJECT\\dist\\vla_preflight-0.1.0rc1-py3-none-any.whl\nCollecting numpy<3,>=1.24 (from vla-preflight==0.1.0rc1)\n  Downloading numpy-2.5.4-cp312-cp312-win_amd64.whl.metadata (6.6 kB)\nDownloading numpy-2.5.4-cp312-cp312-win_amd64.whl (12.6 MB)\n   ---------------------------------------- 12.6/12.6 MB 1.4 MB/s eta 0:00:00\nInstalling collected packages: numpy, vla-preflight\nSuccessfully installed numpy-2.5.4 vla-preflight-0.1.0rc1\n"
+    },
+    {
+      "command": [
+        "python.exe",
+        "-c",
+        "import importlib.util, numpy, vla_preflight; assert importlib.util.find_spec('torch') is None; print('No Torch installed; NumPy', numpy.__version__, 'Preflight', vla_preflight.__version__)"
+      ],
+      "exit_code": 0,
+      "seconds": 1.186,
+      "output": "No Torch installed; NumPy 2.5.4 Preflight 0.1.0rc1\n"
+    },
+    {
+      "command": [
+        "python.exe",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "exit_code": 0,
+      "seconds": 0.444,
+      "output": "No broken requirements found.\n"
+    },
+    {
+      "command": [
+        "python.exe",
+        "-m",
+        "vla_preflight",
+        "demo",
+        "--out",
+        "wheel-smoke-output"
+      ],
+      "exit_code": 0,
+      "seconds": 3.324,
+      "output": "Demo verified: 10 scenarios; 3.125 s\n$PROJECT\\wheel-smoke-output\\index.html\n"
+    }
+  ],
+  "status": "PASS",
+  "final_artifact_revalidation": {
+    "local_date": "2026-10-22T10:27:56.260292+08:00",
+    "sha256": "2ed59383d212f224db25d55fe933c75215b42fe51a2d64dbeaa28653e9471ad5",
+    "steps": [
+      {
+        "command": [
+          "python",
+          "-m",
+          "pip",
+          "install",
+          "--no-cache-dir",
+          "--no-deps",
+          "--force-reinstall",
+          "--disable-pip-version-check",
+          "dist\\vla_preflight-0.1.0rc1-py3-none-any.whl"
+        ],
+        "exit_code": 0,
+        "seconds": 2.117,
+        "output": "Looking in indexes: https://mirrors.aliyun.com/pypi/simple/\nProcessing $PROJECT\\dist\\vla_preflight-0.1.0rc1-py3-none-any.whl\nInstalling collected packages: vla-preflight\n  Attempting uninstall: vla-preflight\n    Found existing installation: vla-preflight 0.1.0rc1\n    Uninstalling vla-preflight-0.1.0rc1:\n      Successfully uninstalled vla-preflight-0.1.0rc1\nSuccessfully installed vla-preflight-0.1.0rc1\n"
+      },
+      {
+        "command": [
+          "python",
+          "-c",
+          "import importlib.util; assert importlib.util.find_spec('torch') is None; print('No Torch')"
+        ],
+        "exit_code": 0,
+        "seconds": 0.032,
+        "output": "No Torch\n"
+      },
+      {
+        "command": [
+          "python",
+          "-m",
+          "vla_preflight",
+          "demo",
+          "--out",
+          ".cache/approval-wheel-demo"
+        ],
+        "exit_code": 0,
+        "seconds": 4.658,
+        "output": "Demo verified: 10 scenarios; 3.266 s\n$PROJECT\\.cache\\approval-wheel-demo\\index.html\n"
+      }
+    ]
+  }
+}

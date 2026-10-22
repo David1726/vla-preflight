@@ -1,0 +1,449 @@
+{
+  "schema": "vla-preflight.demo/1",
+  "scenarios": [
+    {
+      "scenario": "healthy",
+      "seeded_fault": null,
+      "expected": "PASS",
+      "actual": "PASS",
+      "first_recorded_stage": null,
+      "report": "healthy/index.html"
+    },
+    {
+      "scenario": "camera_mapping",
+      "seeded_fault": "camera_mapping",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "first_recorded_stage": "model_input",
+      "report": "camera_mapping/index.html"
+    },
+    {
+      "scenario": "wrong_denormalization",
+      "seeded_fault": "wrong_denormalization",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "first_recorded_stage": "command",
+      "report": "wrong_denormalization/index.html"
+    },
+    {
+      "scenario": "double_denormalization",
+      "seeded_fault": "double_denormalization",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "first_recorded_stage": "command",
+      "report": "double_denormalization/index.html"
+    },
+    {
+      "scenario": "chunk_index",
+      "seeded_fault": "chunk_index",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "first_recorded_stage": "model_output",
+      "report": "chunk_index/index.html"
+    },
+    {
+      "scenario": "missing_reset",
+      "seeded_fault": "missing_reset",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "first_recorded_stage": "model_output",
+      "report": "missing_reset/index.html"
+    },
+    {
+      "scenario": "fixed",
+      "seeded_fault": null,
+      "expected": "PASS",
+      "actual": "PASS",
+      "first_recorded_stage": null,
+      "report": "fixed/index.html"
+    },
+    {
+      "scenario": "unknown_semantics",
+      "seeded_fault": null,
+      "expected": "UNKNOWN",
+      "actual": "UNKNOWN",
+      "first_recorded_stage": null,
+      "report": "unknown_semantics/index.html"
+    },
+    {
+      "scenario": "missing_stage",
+      "seeded_fault": null,
+      "expected": "UNKNOWN",
+      "actual": "UNKNOWN",
+      "first_recorded_stage": null,
+      "report": "missing_stage/index.html"
+    },
+    {
+      "scenario": "unfixed_randomness",
+      "seeded_fault": null,
+      "expected": "UNKNOWN",
+      "actual": "UNKNOWN",
+      "first_recorded_stage": null,
+      "report": "unfixed_randomness/index.html"
+    }
+  ],
+  "probes": {
+    "healthy": {
+      "schema": "vla-preflight.probe/1",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "chunk_consumption",
+          "status": "PASS",
+          "actual": [
+            [
+              100.0
+            ],
+            [
+              101.0
+            ],
+            [
+              102.0
+            ],
+            [
+              110.0
+            ],
+            [
+              111.0
+            ],
+            [
+              112.0
+            ],
+            [
+              120.0
+            ],
+            [
+              121.0
+            ]
+          ],
+          "expected": [
+            [
+              100.0
+            ],
+            [
+              101.0
+            ],
+            [
+              102.0
+            ],
+            [
+              110.0
+            ],
+            [
+              111.0
+            ],
+            [
+              112.0
+            ],
+            [
+              120.0
+            ],
+            [
+              121.0
+            ]
+          ]
+        },
+        {
+          "name": "reset_discards_partial_chunk_and_forwards",
+          "status": "PASS",
+          "actual": [
+            200.0
+          ],
+          "expected": [
+            200.0
+          ]
+        },
+        {
+          "name": "reset_restarts_inner_policy",
+          "status": "PASS",
+          "actual": [
+            200.0
+          ],
+          "expected": [
+            200.0
+          ]
+        },
+        {
+          "name": "session_interleaving",
+          "status": "SKIP",
+          "reason": "Adapter does not declare multi-session support"
+        }
+      ],
+      "model": "deterministic synthetic ChunkPolicy",
+      "simulation": false
+    },
+    "chunk_index": {
+      "schema": "vla-preflight.probe/1",
+      "status": "FAIL",
+      "checks": [
+        {
+          "name": "chunk_consumption",
+          "status": "FAIL",
+          "actual": [
+            [
+              101.0
+            ],
+            [
+              102.0
+            ],
+            [
+              111.0
+            ],
+            [
+              112.0
+            ],
+            [
+              121.0
+            ],
+            [
+              122.0
+            ],
+            [
+              131.0
+            ],
+            [
+              132.0
+            ]
+          ],
+          "expected": [
+            [
+              100.0
+            ],
+            [
+              101.0
+            ],
+            [
+              102.0
+            ],
+            [
+              110.0
+            ],
+            [
+              111.0
+            ],
+            [
+              112.0
+            ],
+            [
+              120.0
+            ],
+            [
+              121.0
+            ]
+          ]
+        },
+        {
+          "name": "reset_discards_partial_chunk_and_forwards",
+          "status": "FAIL",
+          "actual": [
+            201.0
+          ],
+          "expected": [
+            200.0
+          ]
+        },
+        {
+          "name": "reset_restarts_inner_policy",
+          "status": "FAIL",
+          "actual": [
+            201.0
+          ],
+          "expected": [
+            200.0
+          ]
+        },
+        {
+          "name": "session_interleaving",
+          "status": "SKIP",
+          "reason": "Adapter does not declare multi-session support"
+        }
+      ],
+      "model": "deterministic synthetic ChunkPolicy",
+      "simulation": false
+    },
+    "missing_reset": {
+      "schema": "vla-preflight.probe/1",
+      "status": "FAIL",
+      "checks": [
+        {
+          "name": "chunk_consumption",
+          "status": "PASS",
+          "actual": [
+            [
+              100.0
+            ],
+            [
+              101.0
+            ],
+            [
+              102.0
+            ],
+            [
+              110.0
+            ],
+            [
+              111.0
+            ],
+            [
+              112.0
+            ],
+            [
+              120.0
+            ],
+            [
+              121.0
+            ]
+          ],
+          "expected": [
+            [
+              100.0
+            ],
+            [
+              101.0
+            ],
+            [
+              102.0
+            ],
+            [
+              110.0
+            ],
+            [
+              111.0
+            ],
+            [
+              112.0
+            ],
+            [
+              120.0
+            ],
+            [
+              121.0
+            ]
+          ]
+        },
+        {
+          "name": "reset_discards_partial_chunk_and_forwards",
+          "status": "FAIL",
+          "actual": [
+            122.0
+          ],
+          "expected": [
+            200.0
+          ]
+        },
+        {
+          "name": "reset_restarts_inner_policy",
+          "status": "FAIL",
+          "actual": [
+            230.0
+          ],
+          "expected": [
+            200.0
+          ]
+        },
+        {
+          "name": "session_interleaving",
+          "status": "SKIP",
+          "reason": "Adapter does not declare multi-session support"
+        }
+      ],
+      "model": "deterministic synthetic ChunkPolicy",
+      "simulation": false
+    },
+    "fixed": {
+      "schema": "vla-preflight.probe/1",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "chunk_consumption",
+          "status": "PASS",
+          "actual": [
+            [
+              100.0
+            ],
+            [
+              101.0
+            ],
+            [
+              102.0
+            ],
+            [
+              110.0
+            ],
+            [
+              111.0
+            ],
+            [
+              112.0
+            ],
+            [
+              120.0
+            ],
+            [
+              121.0
+            ]
+          ],
+          "expected": [
+            [
+              100.0
+            ],
+            [
+              101.0
+            ],
+            [
+              102.0
+            ],
+            [
+              110.0
+            ],
+            [
+              111.0
+            ],
+            [
+              112.0
+            ],
+            [
+              120.0
+            ],
+            [
+              121.0
+            ]
+          ]
+        },
+        {
+          "name": "reset_discards_partial_chunk_and_forwards",
+          "status": "PASS",
+          "actual": [
+            200.0
+          ],
+          "expected": [
+            200.0
+          ]
+        },
+        {
+          "name": "reset_restarts_inner_policy",
+          "status": "PASS",
+          "actual": [
+            200.0
+          ],
+          "expected": [
+            200.0
+          ]
+        },
+        {
+          "name": "session_interleaving",
+          "status": "SKIP",
+          "reason": "Adapter does not declare multi-session support"
+        }
+      ],
+      "model": "deterministic synthetic ChunkPolicy",
+      "simulation": false
+    }
+  },
+  "elapsed_seconds": 3.171,
+  "seeded_faults": 5,
+  "detected_seeded_faults": 5,
+  "missed_seeded_faults": 0,
+  "healthy_false_alarms": 0,
+  "scope": "Synthetic fixtures only. No general detection-rate claim; no trained model or simulation."
+}

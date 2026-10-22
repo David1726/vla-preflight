@@ -1,0 +1,2144 @@
+{
+  "schema": "vla-preflight.result/1",
+  "status": "PASS",
+  "exit_code": 0,
+  "scope": "Recorded I/O parity only; no task-success or robot-safety claim",
+  "reference": "Healthy deterministic fixture",
+  "candidate": "Fixed: camera mapping, denormalization, chunk index and reset restored",
+  "versions": {
+    "reference": {
+      "fixture": "seeded-demo/1",
+      "pipeline": "numpy-demo/1"
+    },
+    "candidate": {
+      "fixture": "seeded-demo/1",
+      "pipeline": "numpy-demo/1"
+    }
+  },
+  "first_recorded_difference": null,
+  "rows": [
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 0,
+      "stage": "raw_observation",
+      "field": "front",
+      "candidate_field": "front",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 0,
+      "stage": "raw_observation",
+      "field": "wrist",
+      "candidate_field": "wrist",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 0,
+      "stage": "raw_observation",
+      "field": "state",
+      "candidate_field": "state",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 0,
+      "stage": "model_input",
+      "field": "front",
+      "candidate_field": "front",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 0,
+      "stage": "model_input",
+      "field": "wrist",
+      "candidate_field": "wrist",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 0,
+      "stage": "model_input",
+      "field": "state",
+      "candidate_field": "state",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 0,
+      "stage": "model_output",
+      "field": "actions",
+      "candidate_field": "actions",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 0,
+      "stage": "command",
+      "field": "actions",
+      "candidate_field": "actions",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 1,
+      "stage": "raw_observation",
+      "field": "front",
+      "candidate_field": "front",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 1,
+      "stage": "raw_observation",
+      "field": "wrist",
+      "candidate_field": "wrist",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 1,
+      "stage": "raw_observation",
+      "field": "state",
+      "candidate_field": "state",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 1,
+      "stage": "model_input",
+      "field": "front",
+      "candidate_field": "front",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 1,
+      "stage": "model_input",
+      "field": "wrist",
+      "candidate_field": "wrist",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 1,
+      "stage": "model_input",
+      "field": "state",
+      "candidate_field": "state",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 1,
+      "stage": "model_output",
+      "field": "actions",
+      "candidate_field": "actions",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 1,
+      "stage": "command",
+      "field": "actions",
+      "candidate_field": "actions",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 2,
+      "stage": "raw_observation",
+      "field": "front",
+      "candidate_field": "front",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 2,
+      "stage": "raw_observation",
+      "field": "wrist",
+      "candidate_field": "wrist",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 2,
+      "stage": "raw_observation",
+      "field": "state",
+      "candidate_field": "state",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 2,
+      "stage": "model_input",
+      "field": "front",
+      "candidate_field": "front",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 2,
+      "stage": "model_input",
+      "field": "wrist",
+      "candidate_field": "wrist",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 2,
+      "stage": "model_input",
+      "field": "state",
+      "candidate_field": "state",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 2,
+      "stage": "model_output",
+      "field": "actions",
+      "candidate_field": "actions",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 2,
+      "stage": "command",
+      "field": "actions",
+      "candidate_field": "actions",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 3,
+      "stage": "raw_observation",
+      "field": "front",
+      "candidate_field": "front",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 3,
+      "stage": "raw_observation",
+      "field": "wrist",
+      "candidate_field": "wrist",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 3,
+      "stage": "raw_observation",
+      "field": "state",
+      "candidate_field": "state",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 3,
+      "stage": "model_input",
+      "field": "front",
+      "candidate_field": "front",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 3,
+      "stage": "model_input",
+      "field": "wrist",
+      "candidate_field": "wrist",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 3,
+      "stage": "model_input",
+      "field": "state",
+      "candidate_field": "state",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 3,
+      "stage": "model_output",
+      "field": "actions",
+      "candidate_field": "actions",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 3,
+      "stage": "command",
+      "field": "actions",
+      "candidate_field": "actions",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 4,
+      "stage": "raw_observation",
+      "field": "front",
+      "candidate_field": "front",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 4,
+      "stage": "raw_observation",
+      "field": "wrist",
+      "candidate_field": "wrist",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 4,
+      "stage": "raw_observation",
+      "field": "state",
+      "candidate_field": "state",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 4,
+      "stage": "model_input",
+      "field": "front",
+      "candidate_field": "front",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 4,
+      "stage": "model_input",
+      "field": "wrist",
+      "candidate_field": "wrist",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 4,
+      "stage": "model_input",
+      "field": "state",
+      "candidate_field": "state",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 4,
+      "stage": "model_output",
+      "field": "actions",
+      "candidate_field": "actions",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 4,
+      "stage": "command",
+      "field": "actions",
+      "candidate_field": "actions",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 5,
+      "stage": "raw_observation",
+      "field": "front",
+      "candidate_field": "front",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 5,
+      "stage": "raw_observation",
+      "field": "wrist",
+      "candidate_field": "wrist",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 5,
+      "stage": "raw_observation",
+      "field": "state",
+      "candidate_field": "state",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 5,
+      "stage": "model_input",
+      "field": "front",
+      "candidate_field": "front",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 5,
+      "stage": "model_input",
+      "field": "wrist",
+      "candidate_field": "wrist",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 5,
+      "stage": "model_input",
+      "field": "state",
+      "candidate_field": "state",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 5,
+      "stage": "model_output",
+      "field": "actions",
+      "candidate_field": "actions",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 5,
+      "stage": "command",
+      "field": "actions",
+      "candidate_field": "actions",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 6,
+      "stage": "raw_observation",
+      "field": "front",
+      "candidate_field": "front",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 6,
+      "stage": "raw_observation",
+      "field": "wrist",
+      "candidate_field": "wrist",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 6,
+      "stage": "raw_observation",
+      "field": "state",
+      "candidate_field": "state",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 6,
+      "stage": "model_input",
+      "field": "front",
+      "candidate_field": "front",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 6,
+      "stage": "model_input",
+      "field": "wrist",
+      "candidate_field": "wrist",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 6,
+      "stage": "model_input",
+      "field": "state",
+      "candidate_field": "state",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 6,
+      "stage": "model_output",
+      "field": "actions",
+      "candidate_field": "actions",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-0",
+      "step": 6,
+      "stage": "command",
+      "field": "actions",
+      "candidate_field": "actions",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-1",
+      "step": 0,
+      "stage": "raw_observation",
+      "field": "front",
+      "candidate_field": "front",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-1",
+      "step": 0,
+      "stage": "raw_observation",
+      "field": "wrist",
+      "candidate_field": "wrist",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-1",
+      "step": 0,
+      "stage": "raw_observation",
+      "field": "state",
+      "candidate_field": "state",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-1",
+      "step": 0,
+      "stage": "model_input",
+      "field": "front",
+      "candidate_field": "front",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-1",
+      "step": 0,
+      "stage": "model_input",
+      "field": "wrist",
+      "candidate_field": "wrist",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-1",
+      "step": 0,
+      "stage": "model_input",
+      "field": "state",
+      "candidate_field": "state",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-1",
+      "step": 0,
+      "stage": "model_output",
+      "field": "actions",
+      "candidate_field": "actions",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-1",
+      "step": 0,
+      "stage": "command",
+      "field": "actions",
+      "candidate_field": "actions",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-1",
+      "step": 1,
+      "stage": "raw_observation",
+      "field": "front",
+      "candidate_field": "front",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-1",
+      "step": 1,
+      "stage": "raw_observation",
+      "field": "wrist",
+      "candidate_field": "wrist",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-1",
+      "step": 1,
+      "stage": "raw_observation",
+      "field": "state",
+      "candidate_field": "state",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-1",
+      "step": 1,
+      "stage": "model_input",
+      "field": "front",
+      "candidate_field": "front",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-1",
+      "step": 1,
+      "stage": "model_input",
+      "field": "wrist",
+      "candidate_field": "wrist",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-1",
+      "step": 1,
+      "stage": "model_input",
+      "field": "state",
+      "candidate_field": "state",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-1",
+      "step": 1,
+      "stage": "model_output",
+      "field": "actions",
+      "candidate_field": "actions",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-1",
+      "step": 1,
+      "stage": "command",
+      "field": "actions",
+      "candidate_field": "actions",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-1",
+      "step": 2,
+      "stage": "raw_observation",
+      "field": "front",
+      "candidate_field": "front",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-1",
+      "step": 2,
+      "stage": "raw_observation",
+      "field": "wrist",
+      "candidate_field": "wrist",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-1",
+      "step": 2,
+      "stage": "raw_observation",
+      "field": "state",
+      "candidate_field": "state",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-1",
+      "step": 2,
+      "stage": "model_input",
+      "field": "front",
+      "candidate_field": "front",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-1",
+      "step": 2,
+      "stage": "model_input",
+      "field": "wrist",
+      "candidate_field": "wrist",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-1",
+      "step": 2,
+      "stage": "model_input",
+      "field": "state",
+      "candidate_field": "state",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-1",
+      "step": 2,
+      "stage": "model_output",
+      "field": "actions",
+      "candidate_field": "actions",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-1",
+      "step": 2,
+      "stage": "command",
+      "field": "actions",
+      "candidate_field": "actions",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-1",
+      "step": 3,
+      "stage": "raw_observation",
+      "field": "front",
+      "candidate_field": "front",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-1",
+      "step": 3,
+      "stage": "raw_observation",
+      "field": "wrist",
+      "candidate_field": "wrist",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-1",
+      "step": 3,
+      "stage": "raw_observation",
+      "field": "state",
+      "candidate_field": "state",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-1",
+      "step": 3,
+      "stage": "model_input",
+      "field": "front",
+      "candidate_field": "front",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-1",
+      "step": 3,
+      "stage": "model_input",
+      "field": "wrist",
+      "candidate_field": "wrist",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-1",
+      "step": 3,
+      "stage": "model_input",
+      "field": "state",
+      "candidate_field": "state",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-1",
+      "step": 3,
+      "stage": "model_output",
+      "field": "actions",
+      "candidate_field": "actions",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-1",
+      "step": 3,
+      "stage": "command",
+      "field": "actions",
+      "candidate_field": "actions",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-1",
+      "step": 4,
+      "stage": "raw_observation",
+      "field": "front",
+      "candidate_field": "front",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-1",
+      "step": 4,
+      "stage": "raw_observation",
+      "field": "wrist",
+      "candidate_field": "wrist",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-1",
+      "step": 4,
+      "stage": "raw_observation",
+      "field": "state",
+      "candidate_field": "state",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-1",
+      "step": 4,
+      "stage": "model_input",
+      "field": "front",
+      "candidate_field": "front",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-1",
+      "step": 4,
+      "stage": "model_input",
+      "field": "wrist",
+      "candidate_field": "wrist",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        40,
+        64,
+        3
+      ],
+      "candidate_shape": [
+        40,
+        64,
+        3
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-1",
+      "step": 4,
+      "stage": "model_input",
+      "field": "state",
+      "candidate_field": "state",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-1",
+      "step": 4,
+      "stage": "model_output",
+      "field": "actions",
+      "candidate_field": "actions",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    },
+    {
+      "session": "default",
+      "episode": "episode-1",
+      "step": 4,
+      "stage": "command",
+      "field": "actions",
+      "candidate_field": "actions",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "reference_shape": [
+        1
+      ],
+      "candidate_shape": [
+        1
+      ],
+      "status": "PASS",
+      "reason": "Within declared tolerance",
+      "max_abs_error": 0.0,
+      "mismatch_count": 0
+    }
+  ],
+  "counts": {
+    "PASS": 96,
+    "FAIL": 0,
+    "UNKNOWN": 0
+  },
+  "stage_order": [
+    "raw_observation",
+    "model_input",
+    "model_output",
+    "command"
+  ]
+}

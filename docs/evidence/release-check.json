@@ -1,0 +1,148 @@
+{
+  "local_date": "2026-10-22T10:24:31.367480+08:00",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "lint",
+      "command": [
+        "python",
+        "-m",
+        "ruff",
+        "check",
+        "src",
+        "tests",
+        "scripts",
+        "examples",
+        "integrations/run_bridges.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.088,
+      "log": "lint.log"
+    },
+    {
+      "name": "format",
+      "command": [
+        "python",
+        "-m",
+        "ruff",
+        "format",
+        "--check",
+        "src",
+        "tests",
+        "scripts",
+        "examples",
+        "integrations/run_bridges.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.087,
+      "log": "format.log"
+    },
+    {
+      "name": "tests",
+      "command": [
+        "python",
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "exit_code": 0,
+      "seconds": 8.313,
+      "log": "tests.log"
+    },
+    {
+      "name": "dependencies",
+      "command": [
+        "python",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "exit_code": 0,
+      "seconds": 2.291,
+      "log": "dependencies.log"
+    },
+    {
+      "name": "demo",
+      "command": [
+        "python",
+        "-m",
+        "vla_preflight",
+        "demo",
+        "--out",
+        ".cache/publish-validation"
+      ],
+      "exit_code": 0,
+      "seconds": 3.365,
+      "log": "demo.log"
+    },
+    {
+      "name": "example",
+      "command": [
+        "python",
+        "examples/check_parity.py",
+        "--out",
+        ".cache/publish-validation-example"
+      ],
+      "exit_code": 0,
+      "seconds": 0.322,
+      "log": "example.log"
+    },
+    {
+      "name": "build",
+      "command": [
+        "python",
+        "-m",
+        "build",
+        "--no-isolation"
+      ],
+      "exit_code": 0,
+      "seconds": 3.765,
+      "log": "build.log"
+    },
+    {
+      "name": "metadata",
+      "command": [
+        "python",
+        "-m",
+        "twine",
+        "check",
+        "dist\\vla_preflight-0.1.0rc1-py3-none-any.whl",
+        "dist\\vla_preflight-0.1.0rc1.tar.gz"
+      ],
+      "exit_code": 0,
+      "seconds": 0.511,
+      "log": "metadata.log"
+    },
+    {
+      "name": "freeze",
+      "command": [
+        "python",
+        "-m",
+        "pip",
+        "freeze"
+      ],
+      "exit_code": 0,
+      "seconds": 0.506,
+      "log": "freeze.log"
+    }
+  ],
+  "artifacts": [
+    {
+      "file": "vla_preflight-0.1.0rc1-py3-none-any.whl",
+      "bytes": 23170,
+      "sha256": "2ed59383d212f224db25d55fe933c75215b42fe51a2d64dbeaa28653e9471ad5"
+    },
+    {
+      "file": "vla_preflight-0.1.0rc1.tar.gz",
+      "bytes": 573199,
+      "sha256": "d195ff73ded3078caf8e4a52a798837f56212640f9f9c108982cff8229fd5659"
+    }
+  ],
+  "not_executed": [
+    "remote CI",
+    "trained model",
+    "simulation",
+    "robot",
+    "browser visual QA"
+  ]
+}
