@@ -1,0 +1,47 @@
+name: policy-preflight
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  core:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python: ['3.10', '3.12', '3.13']
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install ".[dev]"
+      - run: python -m pytest -q
+      - run: ruff check src tests scripts examples integrations/run_bridges.py
+      - run: ruff format --check src tests scripts examples integrations/run_bridges.py
+      - run: python -m vla_preflight demo --out demo-output
+      # Replace these fixture paths with your PR's captured reference/candidate.
+      # A real failing or UNKNOWN comparison exits nonzero and blocks the step.
+      - run: vla-preflight compare demo-output/reference demo-output/fixed/trace --out parity-report
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: preflight-${{ matrix.os }}-${{ matrix.python }}
+          path: |
+            parity-report/
+            demo-output/summary.json
+  upstream-slices:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install .
+      - run: python -m pip install --index-url https://download.pytorch.org/whl/cpu torch==2.7.1+cpu
+      - run: python -m pip install -r integrations/requirements.txt
+      - run: python integrations/run_bridges.py --out bridge-output
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: pinned-upstream-evidence
+          path: bridge-output/

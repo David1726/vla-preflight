@@ -49,7 +49,7 @@ vla-preflight compare traces/reference traces/candidate --out parity-report
 episode/阶段时间线、容差和版本。曲线只预览平铺后的通道 0；数值比较覆盖全部元素。
 
 [完整捕获教程](docs/capture.md) · [真实接入教程](docs/integrations.md) ·
-[GitHub Actions 示例](.github/workflows/ci.yml)
+[GitHub Actions 示例](examples/github-actions.yml)
 
 ## 已运行的真实接入
 
@@ -81,3 +81,6 @@ trace 使用 JSON 和数值 NPY，禁用 pickle，读取时校验路径与摘要
 源码 MIT；可选上游原始文件保留 Apache-2.0 许可和归属。StarVLA 历史 issue/PR 的贡献
 保留给原贡献者，本项目没有把它算作新发现或已实现桥接。
 欢迎按 [贡献教程](CONTRIBUTING.md) 增加有健康对照、固定版本证据的真实 adapter。
+
+GitHub 当前提供可复制的 CI 示例 `examples/github-actions.yml`。自动启用 Actions 所需的
+workflow 授权仍待确认，因此尚未运行远程 CI；本地验证结果单独记录。

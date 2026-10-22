@@ -85,7 +85,7 @@ evidence and version provenance. No external scripts, fonts or network requests.
 Graphs preview flat channel 0; numeric comparisons cover every element.
 
 [Minimal capture and replay tutorial](docs/capture.md) ·
-[Copyable GitHub Actions workflow](.github/workflows/ci.yml) ·
+[Copyable GitHub Actions workflow](examples/github-actions.yml) ·
 [Instrument your own PR](examples/check_parity.py)
 
 ```text
@@ -154,6 +154,9 @@ anonymized regression trace or a diagnostic case with a healthy control.
 [Release checklist](docs/releasing.md) covers local wheel/sdist checks and source
 packaging. See [GitHub Actions](https://github.com/David1726/vla-preflight/actions)
 for current remote CI status; the committed local evidence is labeled separately.
+The workflow is currently provided as a copyable example in `examples/github-actions.yml`.
+Installing it under `.github/workflows/ci.yml` is pending workflow authorization;
+automated remote CI has not run yet.
 
 MIT for the core; the optional original upstream fixtures retain Apache-2.0.
 See [third-party attribution](THIRD_PARTY.md). The GitHub repository is
